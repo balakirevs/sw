@@ -28,7 +28,21 @@
     "grunt-wiredep": "^2.0.0",
     "jit-grunt": "^0.9.1",
     "time-grunt": "^1.0.0",
-    "jshint-stylish": "^1.0.0"
+    "jshint-stylish": "^1.0.0",
+    "protractor": "latest",
+    "karma-ng-scenario": "latest",
+    "grunt-karma": "latest",
+    "karma-chrome-launcher": "latest",
+    "karma-firefox-launcher": "latest",
+    "karma-html2js-preprocessor": "latest",
+    "karma-script-launcher": "latest",
+    "karma-jasmine": "latest",
+    "requirejs": "latest",
+    "karma-requirejs": "latest",
+    "karma-coffee-preprocessor": "latest",
+    "karma-phantomjs-launcher": "latest",
+    "karma": "latest",
+    "karma-ng-html2js-preprocessor": "latest"
   },
   "engines": {
     "node": ">=0.10.0"
