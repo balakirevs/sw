@@ -6,8 +6,6 @@
 *~
 *.sw[mnpcod]
 *.log
-*.tmp
-*.tmp.*
 *.map
 log.txt
 .idea/
