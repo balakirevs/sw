@@ -11,6 +11,5 @@ describe('Navigation Menu', function() {
     edgesLink.click();
     text = element(by.css('.active > a')).getText();
     expect(text).toEqual('Edges');
-
   });
 });
