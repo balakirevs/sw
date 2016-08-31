@@ -1,7 +1,9 @@
 FactoryGirl.define do
   factory :requirement do
-    name "MyString"
-    value "MyString"
-    mode "MyString"
+    name 'requirement'
+    value 'value'
+    mode 'mode'
+
+    edge
   end
 end

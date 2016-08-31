@@ -22,6 +22,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'json_spec'
+  gem 'headless'
 end
 
 group :development do
