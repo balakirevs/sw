@@ -3,6 +3,7 @@
 ## SETUP
 
 - bundle exec rake db:setup
+- bundle exec rake db:seed
 - bundle exec rake db:test:prepare
 
 ## Run Selenium Tests
