@@ -1,23 +1,19 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name frontendApp.controller:EdgesCtrl
- * @description
- * # EdgesCtrl
- * Controller of the frontendApp
- */
-
 angular.module('frontendApp')
-  .controller('EdgesController', function ($scope, edges, categories, ranks) {
+  .controller('EdgesController', function ($scope, auth, edges, filterBy) {
+    $scope.isLoggedIn = auth.isLoggedIn;
     $scope.edges = edges.query();
-    $scope.categories = categories.query();
-    $scope.ranks = ranks.query();
+    $scope.filterBy = filterBy;
 
-    $scope.filterBy = {
-      search: '',
-      category: $scope.categories[0],
-      rank: $scope.ranks[0]
+    $scope.edgeDelete = function(edge) {
+      edge.$delete();
+    };
+
+    $scope.newEdge = new edges;
+    $scope.editEdge = function(edge) {
+      $scope.newEdge = edge;
+      console.log($scope.newEdge);
     };
 
     var selectedEdge = null;

@@ -13,6 +13,6 @@ angular.module('frontendApp').directive('navbar', function() {
     restrict: 'E',
     templateUrl: 'views/navbar.html',
     controller: 'NavigationController',
-    controllerAs: 'Navigation'
+    // controllerAs: 'Navigation'
   };
 });
